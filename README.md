@@ -13,6 +13,7 @@
 - **2 led:** televizyon görevi gören unoya 0xA5 geldiğinde yaktığı led.
 - **jumper kablolar**
 - **2 breadboard**
+- **3 buton**
 - **(opsiyoneller)** saleae logic analyzer(tsop'tan okunan veriyi görsel olarak okumak için çok kullanışlıydı), pertinaks(breadboard ile de yapılabilir ancak daha kompakt olması adına pertinaks daha mantıklı bir seçenek olabilir-tabi bunun için lehim malzemeleri almanız gerekir)
 
 
