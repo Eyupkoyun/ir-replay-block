@@ -1,6 +1,25 @@
 **⚠️ ÖNEMLİ UYARI: Bu çalışma tamamen eğitim ve siber güvenlik farkındalığı amacıyla hazırlanmıştır. Burada paylaşılan bilgiler ve kodlar, kızılötesi haberleşme sistemlerindeki zafiyetlerin anlaşılması ve bu zafiyetlere karşı savunma mekanizmalarının geliştirilmesi için sunulmuştur. Bu yöntemlerin yetkisiz erişim veya kötü niyetli saldırılar amacıyla kullanılması yasal sorumluluk doğurabilir; tüm sorumluluk uygulayıcıya aittir.
 **
 
+**minimum elektronik malzemeler: eğer alıcı-verici-saldırgan şeklinde bir simülasyon planlıyorsanız:**
+
+- **2 Arduino uno:**(alıcı-verici taklidi yapan).
+- **1 esp32:**(replay attack deneyen kart-ben esp32s node mcu modeli kullandım).
+- **2 tsop4038:** (veya 1838b-daha geniş açılardan yakalama yaptığını tespit ettim ancak tsopa kıyasla daha geç görüyor).
+- **2 IR led:** (ben 5mm 940nm 80mW Infrared Led kullandım).
+- **2 2n2222a:** led sürmek için.
+- **direnç(ler):** 100ohm, 220ohm, 1k, 10k direncler.
+- **100nf seramik kondansatör**(tsop gnd - 5v arasına bağlamak için).
+- **2 led:** televizyon görevi gören unoya 0xA5 geldiğinde yaktığı led.
+- **jumper kablolar**
+- **2 breadboard**
+- **(opsiyoneller)** saleae logic analyzer(tsop'tan okunan veriyi görsel olarak okumak için çok kullanışlıydı), pertinaks(breadboard ile de yapılabilir ancak daha kompakt olması adına pertinaks daha mantıklı bir seçenek olabilir-tabi bunun için lehim malzemeleri almanız gerekir)
+
+
+### Replay Attack Yapan ESP32S: ![a0f5c6da-c262-497a-9433-b2ece0568efa](https://github.com/user-attachments/assets/e2869916-b4db-4e51-804c-e3ab70467fe8)
+### Alıcı Rolündeki Arduino Uno: ![ff2f1385-ef19-4840-8223-efe2185c7547](https://github.com/user-attachments/assets/5a118d9c-10c4-4ed3-bf33-4e4c80c06251)
+### Verici Rolündeki Arduino Uno: ![d44b9c32-9571-4709-9e7d-ec84f0eeda14](https://github.com/user-attachments/assets/0fdc02e5-6a82-45cb-a956-d05d22d57e71)
+
 
 ## 1. Giriş
 
